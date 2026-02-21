@@ -1,65 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalizar Compra</title>
-</head>
+    <link rel="stylesheet" href="styleFinalizarCompra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>      
+
 <body>
-    <img src="./img/image.png" alt="logo Digital College">
-    <nav>
-        <li>
-            Home
-        </li>
-        <li>
-            Produtos
-        </li>
-        <li>
-            Categorias
-        </li>
-        <li>
-            Meus Pedidos
-        </li>
-    </nav>
+    <header>
+        <img src="./assets/logoDigitalCollege.png" alt="logo Digital College">
+        <nav>
+            <li>
+                Home
+            </li>
+            <li>
+                Produtos
+            </li>
+            <li>
+                Categorias
+            </li>
+            <li>
+                Meus Pedidos
+            </li>
+        </nav>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Cadastra-se</p>
+            <button>Entrar</button>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
 
-    <h1>Finalizar Compra</h1>
+    </header>
+    <div>
+        <div>
+        <h1>Finalizar Compra</h1>
 
-    <Form>
-        <p>Informações Pessoais</p>
+        <Form>
+            <p>Informações Pessoais</p>
             <label>Nome Completo*</label>
-                <input type="text" placeholder="Digite seu Nome">
+            <input type="text" placeholder="Digite seu Nome">
             <label>CPF*</label>
-                <input type="number" placeholder="Digite seu CPF">
+            <input type="number" placeholder="Digite seu CPF">
             <label>E-mail*</label>
-                <input type="email" placeholder="Digite seu email">
+            <input type="email" placeholder="Digite seu email">
             <label>Celular*</label>
-                <input type="number" placeholder="Insira seu celular">
-         <p>Informações de Entrega</p>
+            <input type="number" placeholder="Insira seu celular">
+            <p>Informações de Entrega</p>
             <label>Endereço*</label>
-                <input type="text" placeholder="Insira seu endereço">
+            <input type="text" placeholder="Insira seu endereço">
             <label>Bairro*</label>
-                <input type="text" placeholder="Insira seu bairro">
+            <input type="text" placeholder="Insira seu bairro">
             <label>Cidade*</label>
-                <input type="text" placeholder="Insira sua cidade">
+            <input type="text" placeholder="Insira sua cidade">
             <label>CEP*</label>
-                <input type="text" placeholder="Insira seu CEP">
+            <input type="text" placeholder="Insira seu CEP">
             <label>Complemento*</label>
-                <input type="text" placeholder="Insira complemento">
-        <p>Informações de Pagamento</p>
+            <input type="text" placeholder="Insira complemento">
+            <p>Informações de Pagamento</p>
             <p>Forma de Pagamento</p>
-                <input type="radio" id="cartaoDeCredito" name="pagamento" value="a">
+            <input type="radio" id="cartaoDeCredito" name="pagamento" value="a">
             <label for="cartaoDeCredito">Cartão de Crédito</label>
-                <input type="radio" id="boletoBancario" name="pagamento" value="b">
+            <input type="radio" id="boletoBancario" name="pagamento" value="b">
             <label for="boletoBancario">Boleto Bancário</label>
             <label>Nome do Cartão*</label>
-                <input type="text" placeholder="Insira o nome do Cartão">
+            <input type="text" placeholder="Insira o nome do Cartão">
             <label>Número do Cartão*</label>
-                <input type="number" placeholder="Insira o número do cartão">
+            <input type="number" placeholder="Insira o número do cartão">
             <label>CVV*</label>
-                <input type="number" placeholder="CVV*">
+            <input type="number" placeholder="CVV*">
             <label>Data de validade do Cartão</label>
-                <input type="number" placeholder="Insira a validade do cartão">
+            <input type="number" placeholder="Insira a validade do cartão">
+        </Form>
+            <div>
+                <h5>RESUMO</h5>
+                <p>Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <div>
+                    <p>Subtototal:</p>
+                    <p>R$ 219,00</p>
+                    <p>Frete:</p>
+                    <p>R$0,00</p>
+                    <p>Desconto:</p>
+                    <p>R$30,00</p>
+                </div>
+                <h5>Total</h5>
+                <h5>R$219,00</h5>
+                <p>ou 10x de R$21,00 sem juros</p>
+                <button>Realizar Pagamento</button>
+            </div>
+        </div>
+    </div>
 
-    </Form> 
+    <div>
+        <p>Finalizar compra</p>
+        <span>Total</span>
+        <span>R$219,00</span>
+        <span>
+            <p>ou 10x de R$ 21,00 sem juros</p>
+        </span>
+        <button>Realizar Pagamento</button>
+    </div>
+     <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <img src="assets/logoFooter.png" alt="logo">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Auctor libero id et, in gravida.
+                </p>
+
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-columns">
+                <h4>Informação</h4>
+                <a href="#">Sobre Drip Store</a>
+                <a href="#">Segurança</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Blog</a>
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Meus pedidos</a>
+            </div>
+
+            <div class="footer-columns">
+                <h4>Categorias</h4>
+                <a href="#">Camisetas</a>
+                <a href="#">Calças</a>
+                <a href="#">Bonés</a>
+                <a href="#">Headphones</a>
+                <a href="#">Tênis</a>
+            </div>
+
+            <div class="footer-columns">
+                <h4>Contato</h4>
+                <p>Av. Santos Dumont, 1510<br>1 andar - Aldeota<br>Fortaleza - CE</p>
+                <p>(85) 3051-3411</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Digital College
+        </div>
+    </footer>
+
 </body>
+
 </html>
