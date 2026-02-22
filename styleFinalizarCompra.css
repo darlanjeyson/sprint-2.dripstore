@@ -1,63 +1,227 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+body {
+  background: #f4f4f6;
 }
 
-#logo-top{
-    display: flex;
-    justify-content: space-between;
+.header {
+  background: #fff;
+  padding: 30px 70px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-#login-top{
-    display: flex;
-    gap: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#login-top p{
-    color: #474747;
-    text-decoration: underline;
-    padding-top: 0.3rem;
+.logo {
+  height: 40px;
 }
 
-#login-top i{
-    margin-left: 5rem;
-    margin-right: 2rem;
-    padding-top: 0.3rem;
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-#logo-top button{
-    background-color: #c92071;
-    color: white;
-    border-radius: 10px;
-    height: 2rem;
-    width: 5rem;
-    border: none;
+.link {
+  text-decoration: none;
+  color: #474747;
+  font-size: 14px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;           
-    gap: 2rem;
-    padding: 0 3rem;         
-    margin: 0;
-}
-nav ul li {
-    font-size: 14px;
-    cursor: pointer;
-    padding: 0.8rem 0;
-    transition: color 0.3s, border-bottom 0.3s;
-    border-bottom: 2px solid transparent; 
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  gap: 8px;
 }
 
-nav ul li:hover,
-nav ul li.active {
-    color: #c92071;
-    border-bottom-color: #c92071;
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
 }
+
+.search-box i {
+  color: #888;
+  font-size: 14px;
+}
+
+.btn-login {
+  background: #ff007f;
+  border: none;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c92071;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #c92071;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.checkout-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 60px;
+}
+
+.checkout-title {
+  margin-bottom: 30px;
+}
+
+.checkout-content {
+  display: flex;
+  gap: 40px;
+}
+
+.checkout-form {
+  flex: 2;
+  background: #fff;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h3 {
+  margin-bottom: 15px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.form-section input{
+  background-color: #ececec;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  
+}
+
+input[type="radio"] {
+  accent-color: #c92071;
+}
+
+.radio-option input {
+    width: 16px;
+    height: 16px;
+}
+
+.card-row {
+  display: flex;
+  gap: 20px;
+}
+
+.card-row div {
+  flex: 1;
+}
+
+.checkout-summary {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+.summary-values div,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.summary-total {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.installments {
+  margin: 10px 0 20px;
+  font-size: 13px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #ff9900;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
